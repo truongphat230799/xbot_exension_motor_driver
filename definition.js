@@ -47,7 +47,6 @@ Blockly.Blocks['i2c_dc_motor_driver'] = {
     };
 
     Blockly.Python['i2c_dc_motor_driver'] = function(block) {
-        Blockly.Python.definitions_['import_yolobit'] = 'from yolobit import *';
         Blockly.Python.definitions_['import_machine'] = 'import machine';
         Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motors_driver import DCMotor';
         Blockly.Python.definitions_['create_motor_driver'] = 'driver = DCMotor(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';
@@ -113,7 +112,6 @@ Blockly.Blocks['i2c_dc_motor_delay'] = {
 };
 
 Blockly.Python["i2c_dc_motor_delay"] = function (block) {
-    Blockly.Python.definitions_['import_yolobit'] = 'from yolobit import *';
     Blockly.Python.definitions_['import_machine'] = 'import machine';
     Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motors_driver import DCMotor';
     Blockly.Python.definitions_['create_motor_driver'] = 'driver = DCMotor(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';
@@ -165,7 +163,6 @@ Blockly.Blocks['i2c_dc_move_motor'] = {
 };
 
 Blockly.Python["i2c_dc_move_motor"] = function (block) {
-  Blockly.Python.definitions_['import_display'] = 'from yolobit import *';
   Blockly.Python.definitions_['import_machine'] = 'import machine';
   Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motors_driver import DCMotor';
   Blockly.Python.definitions_['create_motor_driver'] = 'driver = DCMotor(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';
@@ -233,7 +230,6 @@ Blockly.Blocks['i2c_stepper_motor_driver'] = {
     };
 
     Blockly.Python['i2c_stepper_motor_driver'] = function(block) {
-        Blockly.Python.definitions_['import_yolobit'] = 'from yolobit import *';
         Blockly.Python.definitions_['import_machine'] = 'import machine';
         Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motors_driver import StepperMotor';
         Blockly.Python.definitions_['create_motor_driver'] = 'driver = StepperMotor(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';
@@ -298,7 +294,6 @@ Blockly.Blocks['i2c_stepper_move_step'] = {
   };
 
   Blockly.Python['i2c_stepper_move_step'] = function(block) {
-      Blockly.Python.definitions_['import_yolobit'] = 'from yolobit import *';
       Blockly.Python.definitions_['import_machine'] = 'import machine';
       Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motors_driver import StepperMotor';
       Blockly.Python.definitions_['create_motor_driver'] = 'driver = StepperMotor(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';
@@ -343,7 +338,6 @@ Blockly.Blocks['i2c_stepper_release'] = {
   };
 
   Blockly.Python['i2c_stepper_release'] = function(block) {
-      Blockly.Python.definitions_['import_yolobit'] = 'from yolobit import *';
       Blockly.Python.definitions_['import_machine'] = 'import machine';
       Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motors_driver import StepperMotor';
       Blockly.Python.definitions_['create_motor_driver'] = 'driver = StepperMotor(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';

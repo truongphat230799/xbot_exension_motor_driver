@@ -1,6 +1,6 @@
 {
     "name": "MOTORS DRIVER",
-    "description": "Mục mở rộng của Yolo:Bit dùng cho module Motor driver",
+    "description": "Mục mở rộng của xController dùng cho module Motor driver",
     "libs": [
         "i2c_motors_driver.py"
     ],
