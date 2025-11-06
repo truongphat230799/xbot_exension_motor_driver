@@ -49,7 +49,7 @@ Blockly.Blocks['i2c_dc_motor_driver'] = {
     Blockly.Python['i2c_dc_motor_driver'] = function(block) {
         Blockly.Python.definitions_['import_machine'] = 'import machine';
         Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motors_driver import DCMotor';
-        Blockly.Python.definitions_['create_motor_driver'] = 'driver = DCMotor(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';
+        Blockly.Python.definitions_['create_motor_driver'] = 'driver = DCMotor(machine.SoftI2C(scl=machine.Pin(12), sda=machine.Pin(11), freq=100000))\n';
         var dropdown_motor = block.getFieldValue('motor');
         var speed = Blockly.Python.valueToCode(block, 'speed', Blockly.Python.ORDER_ATOMIC);
         // TODO: Assemble Python into code variable.
@@ -114,7 +114,7 @@ Blockly.Blocks['i2c_dc_motor_delay'] = {
 Blockly.Python["i2c_dc_motor_delay"] = function (block) {
     Blockly.Python.definitions_['import_machine'] = 'import machine';
     Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motors_driver import DCMotor';
-    Blockly.Python.definitions_['create_motor_driver'] = 'driver = DCMotor(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';
+    Blockly.Python.definitions_['create_motor_driver'] = 'driver = DCMotor(machine.SoftI2C(scl=machine.Pin(12), sda=machine.Pin(11), freq=100000))\n';
   var motor = block.getFieldValue('motor');
   var speed = Blockly.Python.valueToCode(block, 'speed', Blockly.Python.ORDER_ATOMIC);
   var time = Blockly.Python.valueToCode(block, 'time', Blockly.Python.ORDER_ATOMIC);
@@ -165,7 +165,7 @@ Blockly.Blocks['i2c_dc_move_motor'] = {
 Blockly.Python["i2c_dc_move_motor"] = function (block) {
   Blockly.Python.definitions_['import_machine'] = 'import machine';
   Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motors_driver import DCMotor';
-  Blockly.Python.definitions_['create_motor_driver'] = 'driver = DCMotor(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';
+  Blockly.Python.definitions_['create_motor_driver'] = 'driver = DCMotor(machine.SoftI2C(scl=machine.Pin(12), sda=machine.Pin(11), freq=100000))\n';
   var motor1 = Blockly.Python.valueToCode(block, 'motor1', Blockly.Python.ORDER_ATOMIC);
   var motor2 = Blockly.Python.valueToCode(block, 'motor2', Blockly.Python.ORDER_ATOMIC);
   var motor3 = Blockly.Python.valueToCode(block, 'motor3', Blockly.Python.ORDER_ATOMIC);
@@ -232,7 +232,7 @@ Blockly.Blocks['i2c_stepper_motor_driver'] = {
     Blockly.Python['i2c_stepper_motor_driver'] = function(block) {
         Blockly.Python.definitions_['import_machine'] = 'import machine';
         Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motors_driver import StepperMotor';
-        Blockly.Python.definitions_['create_motor_driver'] = 'driver = StepperMotor(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';
+        Blockly.Python.definitions_['create_motor_driver'] = 'driver = StepperMotor(machine.SoftI2C(scl=machine.Pin(12), sda=machine.Pin(11), freq=100000))\n';
         var dropdown_motor = block.getFieldValue('stepper');
         var dropdown_dir = block.getFieldValue('dir');
         var speed = Blockly.Python.valueToCode(block, 'speed', Blockly.Python.ORDER_ATOMIC);
@@ -296,7 +296,7 @@ Blockly.Blocks['i2c_stepper_move_step'] = {
   Blockly.Python['i2c_stepper_move_step'] = function(block) {
       Blockly.Python.definitions_['import_machine'] = 'import machine';
       Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motors_driver import StepperMotor';
-      Blockly.Python.definitions_['create_motor_driver'] = 'driver = StepperMotor(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';
+      Blockly.Python.definitions_['create_motor_driver'] = 'driver = StepperMotor(machine.SoftI2C(scl=machine.Pin(12), sda=machine.Pin(11), freq=100000))\n';
       var dropdown_motor = block.getFieldValue('stepper');
       var dropdown_dir = block.getFieldValue('dir');
       var step = Blockly.Python.valueToCode(block, 'step', Blockly.Python.ORDER_ATOMIC);
@@ -340,7 +340,7 @@ Blockly.Blocks['i2c_stepper_release'] = {
   Blockly.Python['i2c_stepper_release'] = function(block) {
       Blockly.Python.definitions_['import_machine'] = 'import machine';
       Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motors_driver import StepperMotor';
-      Blockly.Python.definitions_['create_motor_driver'] = 'driver = StepperMotor(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';
+      Blockly.Python.definitions_['create_motor_driver'] = 'driver = StepperMotor(machine.SoftI2C(scl=machine.Pin(12), sda=machine.Pin(11), freq=100000))\n';
       var dropdown_motor = block.getFieldValue('stepper');
       var dropdown_dir = block.getFieldValue('dir');
       var step = Blockly.Python.valueToCode(block, 'step', Blockly.Python.ORDER_ATOMIC);
